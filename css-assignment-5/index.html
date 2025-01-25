@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/64b3cfa8e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>WP Pusher</title>
+</head>
+
+<body>
+    <header id="header">
+        <img src="./images/wppusher-logo copy.png" alt="logo" id="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Learn more</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Help</a></li>
+                <li class="selected"><a href="#account">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr id="header-hr">
+    <main id="account">
+        <section id="form-container">
+            <h2>Checkout</h2>
+            <hr class="form-hr">
+            <form action="post">
+                <fieldset>
+                    <legend>
+                        <span class="number">1</span>
+                        Your Basic Information
+                    </legend>
+                    <div class="basic-info">
+                        <div>
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="Jane">
+                        </div>
+                        <div>
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Doe">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="janedoe@example.com">
+                        </div>
+                    </div>
+                </fieldset>
+                <hr class="form-hr">
+                <fieldset>
+                    <legend>
+                        <span class="number">2</span>
+                        Your Payment Information
+                    </legend>
+                    <label for="credit-card">Credit Card</label>
+                    <input type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number"
+                        maxlength="19" name="credit-card" id="credit-card" placeholder="Card Number
+                        
+                        
+                        MM/YY
+                        CVC">
+                </fieldset>
+                <hr class="form-hr">
+                <button type="submit">Buy WP Pusher</button>
+                <div class="help">
+                    <p class="help-text"><img src="./images/Mask.png" alt="help image" id="help-img"><span
+                            class="help-bold">Need any help?</span> Don't hesitate to
+                        contact <a href="#">support!</a></p>
+                    <img src="./images/powered_by_stripe.png" alt="powered-by-stripe" id="help-power-img">
+                </div>
+            </form>
+        </section>
+        <section id="pricing-details">
+            <h4>Freelancer</h4>
+            <div class="price">
+                <p class="dollar">$</p>
+                <p class="amount">99</p>
+                <p class="year"> / year</p>
+            </div>
+            <p class="italic renew">Automatically renews after 1 year</p>
+            <ul id="features">
+                <li><i class="fa-solid fa-check"></i>Use on <span class="bold">5</span> client sites</li>
+                <li><i class="fa-solid fa-check"></i>Private repositories</li>
+                <li><i class="fa-solid fa-check"></i>Email support</li>
+            </ul>
+            <p class="switch">Need <span class="bold">20</span> client sites?</p>
+            <p class="bold switch agency">Switch to the <span class="italic">Agency</span> plan.</p>
+            <hr class="pricing-hr">
+            <p class="italic solution">FTP is horrible to deal with. <span class="bold">WP Pusher</span> solves that
+                issue, and
+                the customer support is awesome!</p>
+            <div class="customer">
+                <img src="./images/Kirk.png" alt="Kirk Beard" id="customer-img">
+                <p class="bold">Kirk Beard</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy 2018 WP Pusher IVS . <a id="link" href="#">Terms of Service</a></p>
+    </footer>
+
+</body>
+
+</html>

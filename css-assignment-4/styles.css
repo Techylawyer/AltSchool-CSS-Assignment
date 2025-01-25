@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url(./Fonts/sofiapro-light.otf);
+}
+
+@font-face {
+  font-family: 'Brown';
+  src: url(./Fonts/Brown-Regular.otf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-blue: #2ec4b6;
+  --light-blue: #f7fdfc;
+  --brown: #737373;
+  --white: #ffffff;
+  --dark-green: #011c34;
+  --black: #000b0a;
+}
+
+body {
+  font-family: 'Sofia Pro', sans-serif;
+  font-size: 16px;
+  color: var(--black);
+  line-height: 1.5;
+}
+
+main {
+  background-color: var(--light-blue);
+  width: 100%;
+  padding: 70px 0;
+}
+
+#heading {
+  width: 80%;
+  margin: auto;
+  font-family: 'Brown', sans-serif;
+}
+
+#logo {
+  width: 20%;
+  max-width: 100%;
+}
+
+.desktop-text {
+  display: none;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 800;
+}
+
+h2 ~ p {
+  color: var(--brown);
+}
+
+form {
+  width: 80%;
+  margin: auto;
+  background-color: var(--white);
+  padding: 20px;
+  line-height: 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  margin: 10px auto;
+  font-weight: 600;
+  color: var(--dark-green);
+}
+
+input,
+select {
+  font: inherit;
+  display: block;
+  width: 100%;
+  outline-color: var(--dark-blue);
+  border: 1px solid var(--brown);
+  border-radius: 2px;
+  margin-bottom: 10px;
+  padding: 15px;
+  letter-spacing: 0.2px;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: var(--dark-blue);
+  border: none;
+  padding: 20px;
+  font-size: 16px;
+  color: var(--white);
+  letter-spacing: 1.2px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 1px 4px var(--dark-blue));
+}
+
+.terms {
+  text-align: center;
+  font-weight: 400;
+}
+
+.terms a {
+  color: var(--dark-blue);
+  font-weight: 500;
+}
+
+@media (min-width: 769px) {
+  body {
+    overflow: hidden;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding: 40px 0;
+  }
+
+  #heading {
+    margin-top: 120px;
+    margin-left: 100px;
+  }
+
+  .mobile-text {
+    display: none;
+  }
+
+  .desktop-text {
+    display: block;
+    font-weight: 500;
+    line-height: 1.5;
+
+    width: 96%;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    padding: 30px;
+  }
+
+  .activity-div,
+  .password-div,
+  .terms {
+    grid-column: 1 / 3;
+  }
+}
