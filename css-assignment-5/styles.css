@@ -316,4 +316,14 @@ footer {
   #pricing-details {
     margin: 0;
   }
+
+  #form-container {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  #pricing-details {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
 }
