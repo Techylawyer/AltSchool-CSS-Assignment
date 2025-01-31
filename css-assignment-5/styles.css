@@ -15,6 +15,7 @@
   --border-color: #646e7a;
   --number-color: #548bc5;
   --check-color: #b9f5ff;
+  --text-decoration-color: #b9f5ff81;
 }
 
 body {
@@ -223,8 +224,8 @@ h4 {
   margin-top: 10px;
   width: max-content;
   text-decoration: underline;
-  text-decoration-color: var(--check-color);
-  text-decoration-thickness: 2px;
+  text-decoration-color: var(--text-decoration-color);
+  text-decoration-thickness: 4px;
 }
 
 .solution {
@@ -248,15 +249,8 @@ h4 {
   }
 }
 
-.fa-check {
+.fa-regular {
   color: var(--check-color);
-  border-radius: 50%;
-  border: 2px solid var(--check-color);
-  height: 20px;
-  width: 20px;
-  font-size: 0.6em;
-  padding: 4px;
-  margin-right: 5px;
 }
 
 .pricing-hr {
