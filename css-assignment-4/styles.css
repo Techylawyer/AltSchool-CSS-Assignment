@@ -66,6 +66,7 @@ form {
   line-height: 20px;
   border-radius: 5px;
   font-size: 14px;
+  position: relative;
 }
 
 label {
@@ -88,7 +89,7 @@ select {
   letter-spacing: 0.2px;
 }
 
-button {
+#submit-btn {
   margin-top: 20px;
   width: 100%;
   background-color: var(--dark-blue);
@@ -101,9 +102,17 @@ button {
   font-weight: 600;
 }
 
-button:hover {
+#submit-btn:hover {
   cursor: pointer;
   filter: drop-shadow(0 1px 4px var(--dark-blue));
+}
+
+#eye-btn {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  top: 715px;
+  right: 50px;
 }
 
 .terms {
@@ -155,5 +164,9 @@ button:hover {
   .password-div,
   .terms {
     grid-column: 1 / 3;
+  }
+
+  #eye-btn {
+    top: 495px;
   }
 }
