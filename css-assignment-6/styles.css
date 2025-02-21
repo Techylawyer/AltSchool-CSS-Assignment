@@ -24,6 +24,8 @@
   --red: #d60505;
   --light-blue: #f9fbfd;
   --border-color: #d6d6d6;
+  --pink: #f7dce1;
+  --very-light-blue: #a9b0bc;
 }
 
 body {
@@ -40,6 +42,9 @@ body {
 
 button {
   cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .linear-gradient {
@@ -451,15 +456,20 @@ summary {
       color: var(--black);
     }
   }
-  .icons {
-    padding: 10px;
-    display: flex;
-    gap: 24px;
-  }
+}
 
-  .icons a {
-    color: var(--black);
-  }
+.icons {
+  padding: 10px;
+  display: flex;
+  gap: 24px;
+}
+
+.icons a {
+  color: var(--black);
+}
+
+.icons a:hover {
+  transform: scale(1.5);
 }
 
 footer {
